@@ -8,11 +8,11 @@ add_definitions(-DUNICODE -D_UNICODE)	#// Set Unicode, not MultiBytes
 #### Solution Settings ####		* MODIFY HERE*
 
 # OpenCV
-set(OPENCV_INC_DIRS "C:/OpenCV2.4.6/install/include")
-set(OPENCV_LIB_DIRS "C:/OpenCV2.4.6/install/lib")
-set(OPENCV246_LIB_RELEASE optimized opencv_core246.lib optimized opencv_highgui246.lib optimized opencv_imgproc246.lib)
-set(OPENCV246_LIB_DEBUG debug opencv_core246d.lib debug opencv_highgui246d.lib debug opencv_imgproc246d.lib)
-set(OPENCV_LIB ${OPENCV246_LIB_RELEASE} ${OPENCV246_LIB_DEBUG})
+set(OPENCV_INC_DIRS "D:/opencv/build/include")
+set(OPENCV_LIB_DIRS "D:/opencv/build/x86/vc12/lib")
+set(OPENCV300_LIB_RELEASE optimized opencv_ts300.lib optimized opencv_world300.lib)
+set(OPENCV300_LIB_DEBUG debug opencv_ts300d.lib debug opencv_world300d.lib)
+set(OPENCV_LIB ${OPENCV300_LIB_RELEASE} ${OPENCV300_LIB_DEBUG})
 
 # OpenNI2
 set(OPENNI2_INC_DIRS "C:/Program Files (x86)/OpenNI2/Include")
