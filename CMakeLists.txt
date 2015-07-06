@@ -40,11 +40,11 @@ set(STRUCTURE_GRABBER structure_grabber.h structure_grabber.cpp ${ONI2_GRABBER})
 
 #### Projects Settings ####
 
-add_executable(structure_depth_image_viewer structure_depth_image_viewer.cpp ${STRUCTURE_GRABBER})
+add_library(structure_depth_image_viewer structure_depth_image_viewer.cpp ${STRUCTURE_GRABBER})
 target_link_libraries(structure_depth_image_viewer ${OPENNI2_LIB} ${OPENCV_LIB})
 
-add_executable(structure_colored_depth_image_viewer structure_colored_depth_image_viewer.cpp ${STRUCTURE_GRABBER})
+add_library(structure_colored_depth_image_viewer structure_colored_depth_image_viewer.cpp ${STRUCTURE_GRABBER})
 target_link_libraries(structure_colored_depth_image_viewer ${OPENNI2_LIB} ${OPENCV_LIB})
 
-add_executable(structure_point_cloud_viewer structure_point_cloud_viewer.cpp ${STRUCTURE_GRABBER})
+add_library(structure_point_cloud_viewer structure_point_cloud_viewer.cpp ${STRUCTURE_GRABBER})
 target_link_libraries(structure_point_cloud_viewer ${OPENNI2_LIB} ${PCL_LIBRARIES})
