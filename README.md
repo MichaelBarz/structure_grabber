@@ -5,8 +5,8 @@ Grabber for [Structure Sensor](http://structure.io/) (Depth and Infrared) using 
 ##Requirement
 
 * [OpenNI2](http://structure.io/openni)
-* [OpenCV](http://opencv.org/)
-* [PointCloudLibrary (PCL)](http://pointclouds.org/)
+* [OpenCV 3](http://opencv.org/)
+* [PointCloudLibrary (PCL)](http://pointclouds.org/) or use this [installer](http://unanancyowen.com/?p=1255&lang=en)
 * [CMake](http://www.cmake.org/)
 
 ## Usage
@@ -14,6 +14,7 @@ Grabber for [Structure Sensor](http://structure.io/) (Depth and Infrared) using 
 ### Preparation
 
 1. Create the project by `cmake`
+2. Edit the file `CMakeLists.txt`: Edit the OpenCV folders according to your OpenCV installation
 
 ### Basic
 
