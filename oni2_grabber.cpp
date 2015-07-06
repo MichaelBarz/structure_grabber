@@ -86,7 +86,9 @@ int Oni2Grabber::acquire() {
 
 	// (2) Acquire new data
 	int changed_index;
+	std::cout << "wait for stream" << std::endl;
 	openni::OpenNI::waitForAnyStream(&streams_[0], streams_.size(), &changed_index);
+	std::cout << "has stream: " << changed_index << std::endl; 
 	switch(changed_index) {
 	case 0:
 		if(enable_depth_) {
