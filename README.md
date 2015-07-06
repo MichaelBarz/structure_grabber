@@ -13,8 +13,8 @@ Grabber for [Structure Sensor](http://structure.io/) (Depth and Infrared) using 
 
 ### Preparation
 
-1. Create the project by `cmake`
-2. Edit the file `CMakeLists.txt`: Edit the OpenCV folders according to your OpenCV installation
+1. Edit the file `CMakeLists.txt`: Edit the OpenCV folders according to your OpenCV installation
+2. Create the project by `cmake`
 
 ### Basic
 
